@@ -6,6 +6,7 @@ import { Toaster } from "@/components/ui/sonner";
 import MySession from "@/components/MySession/MySession";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const exo = Exo({ subsets: ["latin"], variable: "--font-exo" });
 
@@ -38,6 +39,7 @@ export default function RootLayout({
           <div className="flex-1">{children}</div>
           <Footer />
         </MySession>
+        <SpeedInsights />
       </body>
     </html>
   );
